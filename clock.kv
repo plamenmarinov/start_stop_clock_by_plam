@@ -1,0 +1,14 @@
+<BoxLayout>:
+    orientation: "vertical"
+    Label:
+        id: lbl_clock
+        text: "00:00:00"
+        font_size: 100
+        size_hint: 1, 0.7
+    Button:
+        id: btn_start_stop
+        text: "Start"
+        font_size: 100
+        size_hint: 1, 0.3
+        background_color: 0, 1, 0, 1
+        on_press: app.root.start_stop_clock()
